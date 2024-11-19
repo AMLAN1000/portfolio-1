@@ -1,0 +1,325 @@
+body{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+header{
+   width: 100%;
+   height: 72px;
+   position: fixed;
+   background-color: rgb(7, 7, 22);
+   top: 0;
+}
+.Icon{
+   color: antiquewhite;
+   font-size: 30px;
+   padding: 10px;
+   margin-left: 100px;
+}
+.Icon a{
+   text-decoration: none;
+   color: antiquewhite;
+}
+header .nav{
+position: absolute;
+right: 0;
+top: 0;
+margin-right: 50px;
+}
+ 
+
+header .nav ul{
+   list-style: none;
+   
+}
+
+header .nav ul li{
+   float: left;
+   padding-left: 50px;
+
+}
+header .nav ul li a{
+   text-decoration: none;
+   text-transform: capitalize;
+   color: antiquewhite;
+   font-size: 15px;
+   font-weight: bold;
+}
+
+header .nav ul li a:hover{
+   color: rgb(62, 36, 4);
+}
+
+/* Section 1: Home */
+.section1 {
+   width: 100%;
+   height: 665px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background-color: rgb(23, 23, 37);
+   margin-top: 72px;
+}
+.d1, .d2{
+   width: 40%;
+}
+.d1{
+   margin-left: 230px;
+   margin-bottom: 120px;
+}
+
+
+.d1 h3 {
+   color: rgb(189, 200, 211);
+   margin-bottom: 15px;
+}
+
+.d1 h1 {
+   font-size: 50px;
+   color: rgb(191, 191, 148);
+   margin-bottom: 20px;
+}
+
+.d1 h1:hover {
+   text-shadow: 5px 10px 30px rgb(191, 191, 148);
+}
+
+.d1 p {
+   color: rgb(173, 168, 163);
+   margin-bottom: 20px;
+}
+
+.d2 img{
+   max-width: 40%;
+   height: auto;
+   margin-top: 20px;
+}
+
+/* Section 2: About */
+.section2 {
+   width: 100%;
+   height: 665px;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   background-color: rgb(21, 21, 80);
+}
+
+.d3 img {
+   max-width: 300px;
+}
+.d3,.d4{
+   width: 35%;
+   height: auto;
+}
+
+.d4 h3 {
+   font-size: 20px;
+   color: rgb(208, 214, 218);
+   margin-bottom: 10px;
+}
+
+.d4 h1 {
+   font-size: 40px;
+   font-weight: bold;
+   color: rgb(208, 189, 166);
+   margin-bottom: 20px;
+}
+
+.d4 p {
+   color: rgb(183, 166, 145);
+   margin-bottom: 20px;
+}
+
+.d4 button {
+   font-size: 18px;
+   padding: 12px 16px;
+   background-color: rgb(12, 83, 83);
+   color: whitesmoke;
+   border: none;
+   cursor: pointer;
+   transition: box-shadow 0.3s ease;
+}
+
+.d4 button:hover {
+   box-shadow: 0 4px 10px rgba(40, 116, 116, 0.5);
+}
+
+/* Skills Section */
+.section-skill {
+   text-align: center;
+   padding: 50px 20px;
+   background-color: rgb(44, 38, 38);
+}
+
+.section-skill h1 {
+   font-size: 40px;
+   color: rgb(194, 141, 141);
+   margin-bottom: 40px;
+}
+
+.skill-container {
+   display: flex;
+   justify-content: space-around;
+   flex-wrap: wrap;
+}
+
+.skill-item {
+   width: 20%;
+   margin: 20px;
+   padding: 20px;
+   background-color: rgb(63, 63, 87);
+   border-radius: 10px;
+   text-align: center;
+   color: #fff;
+   transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.skill-item h2 {
+   margin-top: 10px;
+   font-size: 20px;
+   font-weight: bold;
+}
+
+.skill-item i {
+   font-size: 40px;
+   color: rgb(191, 191, 148);
+   transition: color 0.3s ease;
+}
+
+.skill-item:hover {
+   background-color: rgb(91, 91, 122);
+   transform: scale(1.1);
+}
+
+.skill-item:hover i {
+   color: rgb(62, 36, 4);
+}
+
+
+.section4 {
+   width: 100%;
+   height: 500px;
+   background-color: rgb(23, 23, 37);
+   text-align: center;
+   padding-top:  1px; ;
+}
+
+.education-header h1,
+.projects-header h1 {
+   font-size: 36px;
+   color: rgb(208, 189, 166);
+}
+
+.education-header p,
+.projects-header p {
+   font-size: 18px;
+   color: rgb(173, 168, 163);
+   margin-bottom: 40px;
+}
+
+.education-container {
+   display: flex;
+   justify-content: space-around;
+   flex-wrap: wrap;
+}
+
+.education-item {
+   width: 30%;
+   margin: 10px 0;
+   background-color: rgb(44, 44, 66);
+   padding: 20px;
+   color: rgb(208, 214, 218);
+   border-radius: 8px;
+   text-align: center;
+}
+
+.education-item h2 {
+   font-size: 22px;
+   margin-bottom: 10px;
+}
+
+.education-item span {
+   display: block;
+   margin-top: 10px;
+   color: rgb(173, 168, 163);
+}
+
+
+
+.section5 {
+   width: 100%;
+   height: 500px;
+   background-color: rgb(21, 21, 80);
+   text-align: center;
+   padding-top: 1px;
+}
+
+.projects-container {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+}
+
+.project-item {
+   width: 30%;
+   margin: 10px 0;
+   background-color: rgb(44, 44, 66);
+   padding: 20px;
+   color: rgb(208, 214, 218);
+   border-radius: 8px;
+   text-align: left;
+}
+
+.project-item h2 {
+   font-size: 22px;
+   margin-bottom: 10px;
+}
+
+.project-item p {
+   font-size: 16px;
+   color: rgb(173, 168, 163);
+}
+
+
+/* Footer */
+footer {
+   background-color: rgb(23, 21, 21);
+   text-align: center;
+   padding: 50px 20px;
+   color: whitesmoke;
+}
+
+footer .foot {
+   display: flex;
+   justify-content: space-around;
+   margin: 0 auto;
+   padding-top: 20px;
+}
+
+footer .foot div {
+   max-width: 300px;
+   text-align: left;
+}
+
+footer .foot div p {
+   color: rgba(82, 151, 151, 0.8);
+   margin-bottom: 10px;
+}
+
+footer button {
+   font-size: 18px;
+   background-color: rgb(126, 110, 88);
+   color: whitesmoke;
+   border: none;
+   padding: 10px 15px;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+}
+
+footer button:hover {
+   background-color: rgb(140, 120, 90);
+}
