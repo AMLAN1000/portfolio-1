@@ -1,47 +1,49 @@
-body{
+body {
    margin: 0;
    padding: 0;
    box-sizing: border-box;
    font-family: Arial, Helvetica, sans-serif;
-  
 }
 
-header{
+/* Header */
+header {
    width: 100%;
    height: 72px;
    position: fixed;
    background-color: rgb(7, 7, 22);
    top: 0;
+   z-index: 1000;
 }
-.Icon{
+
+.Icon {
    color: antiquewhite;
    font-size: 30px;
    padding: 10px;
    margin-left: 100px;
 }
-.Icon a{
+
+.Icon a {
    text-decoration: none;
    color: antiquewhite;
 }
-header .nav{
-position: absolute;
-right: 0;
-top: 0;
-margin-right: 50px;
-}
- 
 
-header .nav ul{
+header .nav {
+   position: absolute;
+   right: 0;
+   top: 0;
+   margin-right: 50px;
+}
+
+header .nav ul {
    list-style: none;
-   
+   display: flex;
 }
 
-header .nav ul li{
-   float: left;
+header .nav ul li {
    padding-left: 50px;
-
 }
-header .nav ul li a{
+
+header .nav ul li a {
    text-decoration: none;
    text-transform: capitalize;
    color: antiquewhite;
@@ -49,28 +51,41 @@ header .nav ul li a{
    font-weight: bold;
 }
 
-header .nav ul li a:hover{
+header .nav ul li a:hover {
    color: rgb(62, 36, 4);
+}
+
+/* Mobile menu (hidden by default) */
+.mobile-menu-btn {
+   display: none;
+   position: absolute;
+   right: 20px;
+   top: 20px;
+   color: antiquewhite;
+   font-size: 24px;
+   cursor: pointer;
 }
 
 /* Section 1: Home */
 .section1 {
    width: 100%;
-   height: 665px;
+   min-height: 665px;
    display: flex;
    justify-content: space-between;
    align-items: center;
    background-color: rgb(23, 23, 37);
    margin-top: 72px;
+   padding: 20px 0;
 }
-.d1, .d2{
+
+.d1, .d2 {
    width: 40%;
 }
-.d1{
+
+.d1 {
    margin-left: 230px;
    margin-bottom: 120px;
 }
-
 
 .d1 h3 {
    color: rgb(189, 200, 211);
@@ -92,7 +107,7 @@ header .nav ul li a:hover{
    margin-bottom: 20px;
 }
 
-.d2 img{
+.d2 img {
    max-width: 40%;
    height: auto;
    margin-top: 20px;
@@ -101,17 +116,20 @@ header .nav ul li a:hover{
 /* Section 2: About */
 .section2 {
    width: 100%;
-   height: 665px;
+   min-height: 665px;
    display: flex;
    justify-content: space-around;
    align-items: center;
    background-color: rgb(21, 21, 80);
+   padding: 20px 0;
 }
 
 .d3 img {
-   max-width: 300px;
+   max-width: 60%;
+   margin-left: 30px;
 }
-.d3,.d4{
+
+.d3, .d4 {
    width: 35%;
    height: auto;
 }
@@ -199,13 +217,13 @@ header .nav ul li a:hover{
    color: rgb(62, 36, 4);
 }
 
-
+/* Section 4: Education */
 .section4 {
    width: 100%;
-   height: 500px;
+   min-height: 500px;
    background-color: rgb(23, 23, 37);
    text-align: center;
-   padding-top:  1px; ;
+   padding: 40px 20px;
 }
 
 .education-header h1,
@@ -248,14 +266,13 @@ header .nav ul li a:hover{
    color: rgb(173, 168, 163);
 }
 
-
-
+/* Section 5: Projects */
 .section5 {
    width: 100%;
-   height: 500px;
+   min-height: 500px;
    background-color: rgb(21, 21, 80);
    text-align: center;
-   padding-top: 1px;
+   padding: 40px 20px;
 }
 
 .projects-container {
@@ -284,7 +301,6 @@ header .nav ul li a:hover{
    color: rgb(173, 168, 163);
 }
 
-
 /* Footer */
 footer {
    background-color: rgb(23, 21, 21);
@@ -296,6 +312,7 @@ footer {
 footer .foot {
    display: flex;
    justify-content: space-around;
+   flex-wrap: wrap;
    margin: 0 auto;
    padding-top: 20px;
 }
@@ -303,6 +320,7 @@ footer .foot {
 footer .foot div {
    max-width: 300px;
    text-align: left;
+   margin: 20px;
 }
 
 footer .foot div p {
@@ -322,4 +340,121 @@ footer button {
 
 footer button:hover {
    background-color: rgb(140, 120, 90);
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 1200px) {
+   .d1 {
+      margin-left: 100px;
+   }
+   
+   .skill-item {
+      width: 25%;
+   }
+}
+
+@media screen and (max-width: 992px) {
+   .section1, .section2 {
+      flex-direction: column;
+      text-align: center;
+      padding: 40px 20px;
+   }
+   
+   .d1, .d2, .d3, .d4 {
+      width: 80%;
+      margin: 20px auto;
+   }
+   
+   .d1 {
+      margin-bottom: 40px;
+   }
+   
+   .d1 h1 {
+      font-size: 40px;
+   }
+   
+   .skill-item {
+      width: 40%;
+   }
+   
+   .education-item, .project-item {
+      width: 45%;
+   }
+}
+
+@media screen and (max-width: 768px) {
+   .Icon {
+      margin-left: 20px;
+   }
+   
+   header .nav {
+      margin-right: 20px;
+   }
+   
+   header .nav ul li {
+      padding-left: 20px;
+   }
+   
+   .mobile-menu-btn {
+      display: block;
+   }
+   
+   header .nav {
+      width: 100%;
+      margin-right: 0;
+      background-color: rgb(7, 7, 22);
+      position: fixed;
+      top: 72px;
+      left: 0;
+      right: 0;
+      height: 0;
+      overflow: hidden;
+      transition: height 0.3s ease;
+   }
+   
+   header .nav.active {
+      height: auto;
+   }
+   
+   header .nav ul {
+      flex-direction: column;
+      padding: 0;
+      margin: 0;
+   }
+   
+   header .nav ul li {
+      float: none;
+      padding: 15px 0;
+      text-align: center;
+   }
+   
+   .skill-item {
+      width: 80%;
+   }
+   
+   .education-item, .project-item {
+      width: 80%;
+   }
+}
+
+@media screen and (max-width: 576px) {
+   .d1 h1 {
+      font-size: 32px;
+   }
+   
+   .d4 h1 {
+      font-size: 30px;
+   }
+   
+   .section-skill h1, 
+   .education-header h1,
+   .projects-header h1 {
+      font-size: 28px;
+   }
+   
+   footer .foot div {
+      width: 100%;
+      margin-bottom: 30px;
+      text-align: center;
+   }
 }
